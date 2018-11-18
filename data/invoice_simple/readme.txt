@@ -1,9 +1,3 @@
-asin_v_index.dat:  new asin_v with numerical asin id
-rdb_table_index.dat: new rdb_table with numerical asin id
-asin_dex.dat: asin original text mapping id
-
-
-single branch P-C query: check shared slide
-from ziye:
-number of solution(match): 229166
-time: 7081ms
+version https://git-lfs.github.com/spec/v1
+oid sha256:af723f46aa0da91fe40eed5d95ab269790c7a5034cb079130daef0a73cf3d9ce
+size 268
