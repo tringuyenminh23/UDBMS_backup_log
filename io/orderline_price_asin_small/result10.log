@@ -1,0 +1,86 @@
+INFO:Loader:Loader started
+VERBOSE:Loader:Test Verbose
+DEBUG:Loader:Loading element: Orderline
+DEBUG:Loader:Loading element took: 0
+DEBUG:Loader:Loading element: price
+DEBUG:Loader:Loading element took: 0
+DEBUG:Loader:Loading element: asin
+DEBUG:Loader:Loading element took: 0
+DEBUG:Loader:Loading table: Orderline_asin
+DEBUG:Loader:Loading table: 0
+DEBUG:Loader:Loading table: price_asin
+DEBUG:Loader:Loading table: 0
+INFO:Loader:Total loading time: 1
+INFO:Main:#####################
+INFO:Main:#####################
+INFO:Main:#####################
+INFO:Loader:Loader started
+INFO:Loader:Total loading time: 1
+INFO:Joiner:Started Joiner
+INFO:Joiner Init:Initialize link took:  0
+INFO:Joiner Filtering:Filtering time 192
+INFO:Joiner Filtering:Number of node processed:  1114
+INFO:Joiner Filtering:Number of node filtered:  0
+INFO:Joiner Filtering:Average filtering time for one node: 0
+INFO:Joiner Validating:Number of remaining leaf nodes after Filtering: 1001
+INFO:Main:#####################
+INFO:Main:#####################
+INFO:Main:#####################
+INFO:Loader:Loader started
+INFO:Loader:Total loading time: 1
+INFO:Joiner:Started Joiner
+INFO:Joiner Init:Initialize link took:  0
+INFO:Joiner Filtering:Filtering time 194
+INFO:Joiner Filtering:Number of node processed:  1114
+INFO:Joiner Filtering:Number of node filtered:  0
+INFO:Joiner Filtering:Average filtering time for one node: 0
+INFO:Joiner Validating:Number of remaining leaf nodes after Filtering: 1001
+INFO:Joiner Validating:Number of remaining leaf nodes after Filtering: 1001
+INFO:Joiner Validating:Number of remaining leaf nodes of root after validation: 4
+INFO:Joiner Validating:validation time 301
+INFO:Joiner Validating:Results:
+INFO:Joiner Validating:Node: Orderline:[['1.1087.25', '1.598.25'], [8518.0, 8553.0]]
+INFO:Joiner Validating:Entry: ['1.1902.5', 8523.0]
+INFO:Joiner Validating:{'Orderline': '1.1902.5', 'price': None, 'asin': None}{'Orderline': 8523.0, 'price': None, 'asin': 77258.0}
+INFO:Joiner Validating:Entry: ['1.2042.25', 8550.0]
+INFO:Joiner Validating:{'Orderline': '1.2042.25', 'price': '1.2042.25.4', 'asin': '1.2042.25.2'}{'Orderline': 8550.0, 'price': 119639.0, 'asin': 60662.0}
+INFO:Joiner Validating:Node: Orderline:[['1.1064.10', '1.689.15'], [43728.0, 43753.0]]
+INFO:Joiner Validating:Entry: ['1.1481.15', 43736.0]
+INFO:Joiner Validating:{'Orderline': '1.1481.15', 'price': None, 'asin': None}{'Orderline': 43736.0, 'price': None, 'asin': 87408.0}
+INFO:Joiner Validating:Entry: ['1.689.15', 43737.0]
+INFO:Joiner Validating:{'Orderline': '1.689.15', 'price': None, 'asin': None}{'Orderline': 43737.0, 'price': None, 'asin': 58071.0}
+INFO:Joiner Validating:Entry: ['1.211.10', 43743.0]
+INFO:Joiner Validating:{'Orderline': '1.211.10', 'price': None, 'asin': None}{'Orderline': 43743.0, 'price': None, 'asin': 39004.0}
+INFO:Joiner Validating:Entry: ['1.1601.10', 43749.0]
+INFO:Joiner Validating:{'Orderline': '1.1601.10', 'price': '1.1601.10.4', 'asin': '1.1601.10.2'}{'Orderline': 43749.0, 'price': 38736.0, 'asin': 76469.0}
+INFO:Joiner Validating:Node: Orderline:[['1.1230.10', '1.899.25'], [44074.0, 44106.0]]
+INFO:Joiner Validating:Entry: ['1.627.5', 44074.0]
+INFO:Joiner Validating:{'Orderline': '1.627.5', 'price': None, 'asin': None}{'Orderline': 44074.0, 'price': None, 'asin': 94826.0}
+INFO:Joiner Validating:Entry: ['1.1230.10', 44083.0]
+INFO:Joiner Validating:{'Orderline': '1.1230.10', 'price': None, 'asin': None}{'Orderline': 44083.0, 'price': None, 'asin': 74598.0}
+INFO:Joiner Validating:Entry: ['1.857.15', 44084.0]
+INFO:Joiner Validating:{'Orderline': '1.857.15', 'price': None, 'asin': None}{'Orderline': 44084.0, 'price': None, 'asin': 31537.0}
+INFO:Joiner Validating:Entry: ['1.8.15', 44099.0]
+INFO:Joiner Validating:{'Orderline': '1.8.15', 'price': None, 'asin': None}{'Orderline': 44099.0, 'price': None, 'asin': 42237.0}
+INFO:Joiner Validating:Entry: ['1.1745.20', 44106.0]
+INFO:Joiner Validating:{'Orderline': '1.1745.20', 'price': '1.1745.20.4', 'asin': '1.1745.20.2'}{'Orderline': 44106.0, 'price': 61171.0, 'asin': 40727.0}
+INFO:Joiner Validating:Node: Orderline:[['1.140.15', '1.599.5'], [45060.0, 45104.0]]
+INFO:Joiner Validating:Entry: ['1.1851.15', 45088.0]
+INFO:Joiner Validating:{'Orderline': '1.1851.15', 'price': '1.1851.15.4', 'asin': '1.1851.15.2'}{'Orderline': 45088.0, 'price': 176505.0, 'asin': 31739.0}
+INFO:Joiner Validating:Entry: ['1.1492.15', 45091.0]
+INFO:Joiner Validating:{'Orderline': '1.1492.15', 'price': None, 'asin': None}{'Orderline': 45091.0, 'price': None, 'asin': 46625.0}
+INFO:Main:#####################
+INFO:Main:#####################
+INFO:Main:#####################
+INFO:Loader:Loader started
+INFO:Loader:Total loading time: 1.375
+INFO:Joiner:Started Joiner
+INFO:Joiner Init:Initialize link took:  0
+INFO:Joiner Filtering:Total Filtering time 269.845325
+INFO:Joiner Filtering:Number of node processed:  1114
+INFO:Joiner Filtering:Number of node filtered:  0
+INFO:Joiner Filtering:Average filtering time for one node: 0.242231
+INFO:Joiner Validating:Number of remaining leaf nodes after Filtering: 1001
+INFO:Main:#####################
+INFO:Main:#####################
+INFO:Main:#####################

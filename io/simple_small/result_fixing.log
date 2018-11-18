@@ -1,0 +1,269 @@
+INFO:Main:Initialize link took:  0
+DEBUG:Main Filterer:--- Begin Filtering --- A:[['1.1', '5.7.4'], [0.0, 100.0]]
+DEBUG:Main Filterer:	is Root
+DEBUG:Main Filterer:	Limit range: {'A': [0.0, 100.0], 'C': [13.0, 79.0], 'D': [3.0, 54.0], 'B': [12.0, 82.0]}
+DEBUG:Main Filterer:	Limit range UPDATED based on node value{'A': [0.0, 100.0], 'C': [13.0, 79.0], 'D': [3.0, 54.0], 'B': [12.0, 82.0]}
+DEBUG:Value Filterer:Begin Value Filtering A:[['1.1', '5.7.4'], [0.0, 100.0]]
+DEBUG:Value Filterer:Init intersected_value_boundary[{'A': [10.0, 94.0], 'D': [1.0, 50.0]}]
+DEBUG:Value Filterer:Find intersected value boundary
+DEBUG:Value Filterer:Checking D_A Nodes: [[[1.0, 50.0], [10.0, 94.0]]]
+DEBUG:Value Filterer:remaining_nodes: [[[1.0, 50.0], [10.0, 94.0]]]
+DEBUG:Value Filterer:Updated intersected value boundary: [{'A': [10.0, 94.0], 'D': [1.0, 50.0]}]
+DEBUG:Value Filterer:Checking A_B_D Nodes: [[[6.0, 118.0], [17.0, 600.0], [13.0, 72.0]]]
+DEBUG:Value Filterer:remaining_nodes: [[[6.0, 118.0], [17.0, 600.0], [13.0, 72.0]]]
+DEBUG:Value Filterer:Updated intersected value boundary: [{'A': [10.0, 94.0], 'D': [13.0, 50.0], 'B': [17.0, 600.0]}]
+DEBUG:Value Filterer:Checking C_A Nodes: [[[15.0, 400.0], [5.0, 99.0]]]
+DEBUG:Value Filterer:remaining_nodes: [[[15.0, 400.0], [5.0, 99.0]]]
+DEBUG:Value Filterer:Updated intersected value boundary: [{'A': [10.0, 94.0], 'B': [17.0, 600.0], 'D': [13.0, 50.0], 'C': [15.0, 400.0]}]
+DEBUG:Value Filterer:Value Filter result
+DEBUG:Value Filterer:link sql: 
+DEBUG:Value Filterer:	D_A[[[1.0, 50.0], [10.0, 94.0]]]
+DEBUG:Value Filterer:	A_B_D[[[6.0, 118.0], [17.0, 600.0], [13.0, 72.0]]]
+DEBUG:Value Filterer:	C_A[[[15.0, 400.0], [5.0, 99.0]]]
+DEBUG:Value Filterer:link sql intersection range: 
+DEBUG:Value Filterer:	A[[10.0, 94.0]]
+DEBUG:Value Filterer:	C[[15.0, 400.0]]
+DEBUG:Value Filterer:	D[[13.0, 50.0]]
+DEBUG:Value Filterer:	B[[17.0, 600.0]]
+DEBUG:Main Filterer:Limit range UPDATED based on value filtering{'A': [10.0, 94.0], 'C': [15.0, 79.0], 'D': [13.0, 50.0], 'B': [17.0, 82.0]}
+DEBUG:Main Filterer:Begin Connected Element FilteringA:[['1.1', '5.7.4'], [0.0, 100.0]]
+DEBUG:Connected Element:Connected element filtering
+DEBUG:Connected Element:Limit range {'A': [10.0, 94.0], 'C': [15.0, 79.0], 'D': [13.0, 50.0], 'B': [17.0, 82.0]}
+DEBUG:Connected Element:	Checking: C
+DEBUG:Connected Element:		C:[['2.3', '3.7.3'], [13.0, 79.0]]
+DEBUG:Connected Element:	Remaining nodes: ["C:[['2.3', '3.7.3'], [13.0, 79.0]]"]
+DEBUG:Connected Element:	Checking: B
+DEBUG:Connected Element:		B:[['1.4', '5.6'], [12.0, 82.0]]
+DEBUG:Connected Element:	Remaining nodes: ["B:[['1.4', '5.6'], [12.0, 82.0]]"]
+DEBUG:Traversing Query:Start check lower lever A:[['1.1', '5.7.4'], [0.0, 100.0]]
+DEBUG:Traversing Query:	Traverse down C
+DEBUG:Main Filterer:		--- Begin Filtering --- C:[['2.3', '3.7.3'], [13.0, 79.0]]
+DEBUG:Main Filterer:			is Root
+DEBUG:Main Filterer:			Limit range: {'A': [10.0, 94.0], 'B': [17.0, 82.0], 'D': [13.0, 50.0], 'C': [15.0, 79.0]}
+DEBUG:Main Filterer:			Limit range UPDATED based on node value{'A': [10.0, 94.0], 'B': [17.0, 82.0], 'D': [13.0, 50.0], 'C': [15.0, 79.0]}
+DEBUG:Value Filterer:		Begin Value Filtering C:[['2.3', '3.7.3'], [13.0, 79.0]]
+DEBUG:Value Filterer:		Empty link_sql
+DEBUG:Main Filterer:		Limit range UPDATED based on value filtering{'A': [10.0, 94.0], 'B': [17.0, 82.0], 'D': [13.0, 50.0], 'C': [15.0, 79.0]}
+DEBUG:Main Filterer:		Begin Connected Element FilteringC:[['2.3', '3.7.3'], [13.0, 79.0]]
+DEBUG:Connected Element:		Connected element filtering
+DEBUG:Connected Element:		Limit range {'A': [10.0, 94.0], 'B': [17.0, 82.0], 'D': [13.0, 50.0], 'C': [15.0, 79.0]}
+DEBUG:Connected Element:			Checking: D
+DEBUG:Connected Element:				D:[['1.71', '4.6.3'], [3.0, 54.0]]
+DEBUG:Connected Element:			Remaining nodes: ["D:[['1.71', '4.6.3'], [3.0, 54.0]]"]
+DEBUG:Traversing Query:		Start check lower lever C:[['2.3', '3.7.3'], [13.0, 79.0]]
+DEBUG:Traversing Query:			Traverse down D
+DEBUG:Main Filterer:			--- Begin Filtering --- D:[['1.71', '4.6.3'], [3.0, 54.0]]
+DEBUG:Main Filterer:				is Root
+DEBUG:Main Filterer:				Limit range: {'A': [10.0, 94.0], 'C': [15.0, 79.0], 'D': [13.0, 50.0], 'B': [17.0, 82.0]}
+DEBUG:Main Filterer:				Limit range UPDATED based on node value{'A': [10.0, 94.0], 'C': [15.0, 79.0], 'D': [13.0, 50.0], 'B': [17.0, 82.0]}
+DEBUG:Value Filterer:			Begin Value Filtering D:[['1.71', '4.6.3'], [3.0, 54.0]]
+DEBUG:Value Filterer:			Empty link_sql
+DEBUG:Main Filterer:			Limit range UPDATED based on value filtering{'A': [10.0, 94.0], 'C': [15.0, 79.0], 'D': [13.0, 50.0], 'B': [17.0, 82.0]}
+DEBUG:Main Filterer:			Begin Connected Element FilteringD:[['1.71', '4.6.3'], [3.0, 54.0]]
+DEBUG:Connected Element:			Connected element filtering
+DEBUG:Connected Element:			Limit range {'A': [10.0, 94.0], 'C': [15.0, 79.0], 'D': [13.0, 50.0], 'B': [17.0, 82.0]}
+DEBUG:Traversing Query:			Start check lower lever D:[['1.71', '4.6.3'], [3.0, 54.0]]
+DEBUG:Init Children:			Start initialize children link D:[['1.71', '4.6.3'], [3.0, 54.0]]
+DEBUG:Init Children:			limit_range {'A': [10.0, 94.0], 'C': [15.0, 79.0], 'D': [13.0, 50.0], 'B': [17.0, 82.0]}
+DEBUG:Init Children:	Child D:[['4.12', '4.6.3'], [3.0, 19.0]]
+DEBUG:Init Children:		link xml: 
+DEBUG:Init Children:		link sql: 
+DEBUG:Init Children:	Child D:[['1.71', '2.9.4.2'], [26.0, 54.0]]
+DEBUG:Init Children:		link xml: 
+DEBUG:Init Children:		link sql: 
+DEBUG:Init Children:		Start initialize children link C:[['2.3', '3.7.3'], [13.0, 79.0]]
+DEBUG:Init Children:		limit_range {'A': [10.0, 94.0], 'B': [17.0, 82.0], 'D': [13.0, 50.0], 'C': [15.0, 79.0]}
+DEBUG:Init Children:			D:[['1.71', '4.6.3'], [3.0, 54.0]] - Children: [[['4.12', '4.6.3'], [3.0, 19.0]], [['1.71', '2.9.4.2'], [26.0, 54.0]]]
+DEBUG:Init Children:			link_xml[D] [[['1.71', '2.9.4.2'], [26.0, 54.0]]]
+DEBUG:Init Children:	Child C:[['2.3', '2.9.4'], [13.0, 30.0]]
+DEBUG:Init Children:		link xml: 
+DEBUG:Init Children:			D["D:[['1.71', '2.9.4.2'], [26.0, 54.0]]"]
+DEBUG:Init Children:		link sql: 
+DEBUG:Init Children:	Child C:[['3.4', '3.7.3'], [36.0, 79.0]]
+DEBUG:Init Children:		link xml: 
+DEBUG:Init Children:			D["D:[['1.71', '2.9.4.2'], [26.0, 54.0]]"]
+DEBUG:Init Children:		link sql: 
+DEBUG:Traversing Query:	Traverse down B
+DEBUG:Main Filterer:	--- Begin Filtering --- B:[['1.4', '5.6'], [12.0, 82.0]]
+DEBUG:Main Filterer:		is Root
+DEBUG:Main Filterer:		Limit range: {'A': [10.0, 94.0], 'B': [17.0, 82.0], 'D': [13.0, 50.0], 'C': [15.0, 79.0]}
+DEBUG:Main Filterer:		Limit range UPDATED based on node value{'A': [10.0, 94.0], 'B': [17.0, 82.0], 'D': [13.0, 50.0], 'C': [15.0, 79.0]}
+DEBUG:Value Filterer:	Begin Value Filtering B:[['1.4', '5.6'], [12.0, 82.0]]
+DEBUG:Value Filterer:	Init intersected_value_boundary[{'C': [6.0, 72.0], 'B': [5.0, 69.0]}]
+DEBUG:Value Filterer:	Find intersected value boundary
+DEBUG:Value Filterer:	Checking B_C Nodes: [[[5.0, 69.0], [6.0, 72.0]]]
+DEBUG:Value Filterer:	remaining_nodes: [[[5.0, 69.0], [6.0, 72.0]]]
+DEBUG:Value Filterer:	Updated intersected value boundary: [{'C': [6.0, 72.0], 'B': [5.0, 69.0]}]
+DEBUG:Value Filterer:	Value Filter result
+DEBUG:Value Filterer:	link sql: 
+DEBUG:Value Filterer:		B_C[[[5.0, 69.0], [6.0, 72.0]]]
+DEBUG:Value Filterer:	link sql intersection range: 
+DEBUG:Value Filterer:		B[[5.0, 69.0]]
+DEBUG:Value Filterer:		C[[6.0, 72.0]]
+DEBUG:Main Filterer:	Limit range UPDATED based on value filtering{'A': [10.0, 94.0], 'B': [17.0, 69.0], 'D': [13.0, 50.0], 'C': [15.0, 72.0]}
+DEBUG:Main Filterer:	Begin Connected Element FilteringB:[['1.4', '5.6'], [12.0, 82.0]]
+DEBUG:Connected Element:	Connected element filtering
+DEBUG:Connected Element:	Limit range {'A': [10.0, 94.0], 'B': [17.0, 69.0], 'D': [13.0, 50.0], 'C': [15.0, 72.0]}
+DEBUG:Traversing Query:	Start check lower lever B:[['1.4', '5.6'], [12.0, 82.0]]
+DEBUG:Init Children:	Start initialize children link B:[['1.4', '5.6'], [12.0, 82.0]]
+DEBUG:Init Children:	limit_range {'A': [10.0, 94.0], 'B': [17.0, 69.0], 'D': [13.0, 50.0], 'C': [15.0, 72.0]}
+DEBUG:Init Children:		B_C:[[5.0, 69.0], [6.0, 72.0]] - Children: [[[5.0, 31.0], [13.0, 72.0]], [[44.0, 69.0], [6.0, 41.0]]]
+DEBUG:Init Children:		link_sql[B_C] [[[5.0, 31.0], [13.0, 72.0]], [[44.0, 69.0], [6.0, 41.0]]]
+DEBUG:Init Children:	Child B:[['1.4', '2.9.2'], [12.0, 31.0]]
+DEBUG:Init Children:		link xml: 
+DEBUG:Init Children:		link sql: 
+DEBUG:Init Children:			B_C['B_C:[[5.0, 31.0], [13.0, 72.0]]']
+DEBUG:Init Children:Start initialize children link A:[['1.1', '5.7.4'], [0.0, 100.0]]
+DEBUG:Init Children:limit_range {'A': [10.0, 94.0], 'C': [15.0, 72.0], 'D': [13.0, 50.0], 'B': [17.0, 69.0]}
+DEBUG:Init Children:	C:[['2.3', '3.7.3'], [13.0, 79.0]] - Children: [[['2.3', '2.9.4'], [13.0, 30.0]], [['3.4', '3.7.3'], [36.0, 79.0]]]
+DEBUG:Init Children:	link_xml[C] [[['2.3', '2.9.4'], [13.0, 30.0]], [['3.4', '3.7.3'], [36.0, 79.0]]]
+DEBUG:Init Children:	B:[['1.4', '5.6'], [12.0, 82.0]] - Children: [[['1.4', '2.9.2'], [12.0, 31.0]]]
+DEBUG:Init Children:	link_xml[B] [[['1.4', '2.9.2'], [12.0, 31.0]]]
+DEBUG:Init Children:	D_A:[[1.0, 50.0], [10.0, 94.0]] - Children: [[[13.0, 26.0], [10.0, 41.0]], [[1.0, 50.0], [72.0, 94.0]]]
+DEBUG:Init Children:	link_sql[D_A] [[[13.0, 26.0], [10.0, 41.0]], [[1.0, 50.0], [72.0, 94.0]]]
+DEBUG:Init Children:	A_B_D:[[6.0, 118.0], [17.0, 600.0], [13.0, 72.0]] - Children: [[[6.0, 72.0], [31.0, 600.0], [13.0, 27.0]], [[79.0, 118.0], [17.0, 85.0], [40.0, 72.0]]]
+DEBUG:Init Children:	link_sql[A_B_D] [[[6.0, 72.0], [31.0, 600.0], [13.0, 27.0]], [[79.0, 118.0], [17.0, 85.0], [40.0, 72.0]]]
+DEBUG:Init Children:	C_A:[[15.0, 400.0], [5.0, 99.0]] - Children: [[[24.0, 400.0], [5.0, 40.0]], [[15.0, 71.0], [62.0, 99.0]]]
+DEBUG:Init Children:	link_sql[C_A] [[[24.0, 400.0], [5.0, 40.0]], [[15.0, 71.0], [62.0, 99.0]]]
+DEBUG:Init Children:	Child A:[['1.1', '2.9'], [0.0, 64.0]]
+DEBUG:Init Children:		link xml: 
+DEBUG:Init Children:			C["C:[['2.3', '2.9.4'], [13.0, 30.0]]", "C:[['3.4', '3.7.3'], [36.0, 79.0]]"]
+DEBUG:Init Children:			B["B:[['1.4', '2.9.2'], [12.0, 31.0]]"]
+DEBUG:Init Children:		link sql: 
+DEBUG:Init Children:			D_A['D_A:[[13.0, 26.0], [10.0, 41.0]]']
+DEBUG:Init Children:			A_B_D['A_B_D:[[6.0, 72.0], [31.0, 600.0], [13.0, 27.0]]']
+DEBUG:Init Children:			C_A['C_A:[[24.0, 400.0], [5.0, 40.0]]', 'C_A:[[15.0, 71.0], [62.0, 99.0]]']
+INFO:Main:query root node A:[['1.1', '5.7.4'], [0.0, 100.0]] filter time: 0 filtered: False 
+DEBUG:Main Filterer:--- Begin Filtering --- A:[['1.1', '2.9'], [0.0, 64.0]]
+DEBUG:Main Filterer:	Parent: A:[['1.1', '5.7.4'], [0.0, 100.0]]
+DEBUG:Main Filterer:	Limit range: {'A': [10.0, 94.0], 'B': [17.0, 69.0], 'D': [13.0, 50.0], 'C': [15.0, 72.0]}
+DEBUG:Main Filterer:	Limit range UPDATED based on node value{'A': [10.0, 64.0], 'B': [17.0, 69.0], 'D': [13.0, 50.0], 'C': [15.0, 72.0]}
+DEBUG:Value Filterer:Begin Value Filtering A:[['1.1', '2.9'], [0.0, 64.0]]
+DEBUG:Value Filterer:Init intersected_value_boundary[{'A': [10.0, 41.0], 'D': [13.0, 26.0]}]
+DEBUG:Value Filterer:Find intersected value boundary
+DEBUG:Value Filterer:Checking D_A Nodes: [[[13.0, 26.0], [10.0, 41.0]]]
+DEBUG:Value Filterer:remaining_nodes: [[[13.0, 26.0], [10.0, 41.0]]]
+DEBUG:Value Filterer:Updated intersected value boundary: [{'A': [10.0, 41.0], 'D': [13.0, 26.0]}]
+DEBUG:Value Filterer:Checking A_B_D Nodes: [[[6.0, 72.0], [31.0, 600.0], [13.0, 27.0]]]
+DEBUG:Value Filterer:remaining_nodes: [[[6.0, 72.0], [31.0, 600.0], [13.0, 27.0]]]
+DEBUG:Value Filterer:Updated intersected value boundary: [{'A': [10.0, 41.0], 'D': [13.0, 26.0], 'B': [31.0, 600.0]}]
+DEBUG:Value Filterer:Checking C_A Nodes: [[[24.0, 400.0], [5.0, 40.0]], [[15.0, 71.0], [62.0, 99.0]]]
+DEBUG:Value Filterer:remaining_nodes: [[[24.0, 400.0], [5.0, 40.0]]]
+DEBUG:Value Filterer:Updated intersected value boundary: [{'A': [10.0, 40.0], 'B': [31.0, 600.0], 'D': [13.0, 26.0], 'C': [24.0, 400.0]}]
+DEBUG:Value Filterer:Value Filter result
+DEBUG:Value Filterer:link sql: 
+DEBUG:Value Filterer:	D_A[[[13.0, 26.0], [10.0, 41.0]]]
+DEBUG:Value Filterer:	A_B_D[[[6.0, 72.0], [31.0, 600.0], [13.0, 27.0]]]
+DEBUG:Value Filterer:	C_A[[[24.0, 400.0], [5.0, 40.0]]]
+DEBUG:Value Filterer:link sql intersection range: 
+DEBUG:Value Filterer:	A[[10.0, 40.0]]
+DEBUG:Value Filterer:	C[[24.0, 400.0]]
+DEBUG:Value Filterer:	D[[13.0, 26.0]]
+DEBUG:Value Filterer:	B[[31.0, 600.0]]
+DEBUG:Main Filterer:Limit range UPDATED based on value filtering{'A': [10.0, 40.0], 'B': [31.0, 69.0], 'D': [13.0, 26.0], 'C': [24.0, 72.0]}
+DEBUG:Main Filterer:Begin Connected Element FilteringA:[['1.1', '2.9'], [0.0, 64.0]]
+DEBUG:Connected Element:Connected element filtering
+DEBUG:Connected Element:Limit range {'A': [10.0, 40.0], 'B': [31.0, 69.0], 'D': [13.0, 26.0], 'C': [24.0, 72.0]}
+DEBUG:Connected Element:	Checking: C
+DEBUG:Connected Element:		C:[['2.3', '2.9.4'], [13.0, 30.0]]
+DEBUG:Connected Element:		C:[['3.4', '3.7.3'], [36.0, 79.0]]
+DEBUG:Connected Element:	Remaining nodes: ["C:[['2.3', '2.9.4'], [13.0, 30.0]]"]
+DEBUG:Connected Element:	Checking: B
+DEBUG:Connected Element:		B:[['1.4', '2.9.2'], [12.0, 31.0]]
+DEBUG:Connected Element:	Remaining nodes: ["B:[['1.4', '2.9.2'], [12.0, 31.0]]"]
+DEBUG:Traversing Query:Start check lower lever A:[['1.1', '2.9'], [0.0, 64.0]]
+DEBUG:Traversing Query:	Traverse down C
+DEBUG:Main Filterer:		--- Begin Filtering --- C:[['2.3', '2.9.4'], [13.0, 30.0]]
+DEBUG:Main Filterer:			Parent: C:[['2.3', '3.7.3'], [13.0, 79.0]]
+DEBUG:Main Filterer:			Limit range: {'A': [10.0, 40.0], 'C': [24.0, 72.0], 'D': [13.0, 26.0], 'B': [31.0, 69.0]}
+DEBUG:Main Filterer:			Limit range UPDATED based on node value{'A': [10.0, 40.0], 'C': [24.0, 30.0], 'D': [13.0, 26.0], 'B': [31.0, 69.0]}
+DEBUG:Value Filterer:		Begin Value Filtering C:[['2.3', '2.9.4'], [13.0, 30.0]]
+DEBUG:Value Filterer:		Empty link_sql
+DEBUG:Main Filterer:		Limit range UPDATED based on value filtering{'A': [10.0, 40.0], 'C': [24.0, 30.0], 'D': [13.0, 26.0], 'B': [31.0, 69.0]}
+DEBUG:Main Filterer:		Begin Connected Element FilteringC:[['2.3', '2.9.4'], [13.0, 30.0]]
+DEBUG:Connected Element:		Connected element filtering
+DEBUG:Connected Element:		Limit range {'A': [10.0, 40.0], 'C': [24.0, 30.0], 'D': [13.0, 26.0], 'B': [31.0, 69.0]}
+DEBUG:Connected Element:			Checking: D
+DEBUG:Connected Element:				D:[['1.71', '2.9.4.2'], [26.0, 54.0]]
+DEBUG:Connected Element:			Remaining nodes: ["D:[['1.71', '2.9.4.2'], [26.0, 54.0]]"]
+DEBUG:Traversing Query:		Start check lower lever C:[['2.3', '2.9.4'], [13.0, 30.0]]
+DEBUG:Traversing Query:			Traverse down D
+DEBUG:Main Filterer:			--- Begin Filtering --- D:[['1.71', '2.9.4.2'], [26.0, 54.0]]
+DEBUG:Main Filterer:				Parent: D:[['1.71', '4.6.3'], [3.0, 54.0]]
+DEBUG:Main Filterer:				Limit range: {'A': [10.0, 40.0], 'B': [31.0, 69.0], 'D': [13.0, 26.0], 'C': [24.0, 30.0]}
+DEBUG:Main Filterer:				Limit range UPDATED based on node value{'A': [10.0, 40.0], 'B': [31.0, 69.0], 'D': [26.0, 26.0], 'C': [24.0, 30.0]}
+DEBUG:Value Filterer:			Begin Value Filtering D:[['1.71', '2.9.4.2'], [26.0, 54.0]]
+DEBUG:Value Filterer:			Empty link_sql
+DEBUG:Main Filterer:			Limit range UPDATED based on value filtering{'A': [10.0, 40.0], 'B': [31.0, 69.0], 'D': [26.0, 26.0], 'C': [24.0, 30.0]}
+DEBUG:Main Filterer:			Begin Connected Element FilteringD:[['1.71', '2.9.4.2'], [26.0, 54.0]]
+DEBUG:Connected Element:			Connected element filtering
+DEBUG:Connected Element:			Limit range {'A': [10.0, 40.0], 'B': [31.0, 69.0], 'D': [26.0, 26.0], 'C': [24.0, 30.0]}
+DEBUG:Traversing Query:			Start check lower lever D:[['1.71', '2.9.4.2'], [26.0, 54.0]]
+DEBUG:Init Children:			Start initialize children link D:[['1.71', '2.9.4.2'], [26.0, 54.0]]
+DEBUG:Init Children:			limit_range {'A': [10.0, 40.0], 'B': [31.0, 69.0], 'D': [26.0, 26.0], 'C': [24.0, 30.0]}
+DEBUG:Init Children:	Child D:[['1.8.2', '2.9.4.2'], [26.0, 30.0]]
+DEBUG:Init Children:		link xml: 
+DEBUG:Init Children:		link sql: 
+DEBUG:Init Children:	Child D:[['1.71', '2.16.3'], [39.0, 54.0]]
+DEBUG:Init Children:		link xml: 
+DEBUG:Init Children:		link sql: 
+DEBUG:Init Children:		Start initialize children link C:[['2.3', '2.9.4'], [13.0, 30.0]]
+DEBUG:Init Children:		limit_range {'A': [10.0, 40.0], 'C': [24.0, 30.0], 'D': [26.0, 26.0], 'B': [31.0, 69.0]}
+DEBUG:Init Children:			D:[['1.71', '2.9.4.2'], [26.0, 54.0]] - Children: [[['1.8.2', '2.9.4.2'], [26.0, 30.0]], [['1.71', '2.16.3'], [39.0, 54.0]]]
+DEBUG:Init Children:			link_xml[D] [[['1.8.2', '2.9.4.2'], [26.0, 30.0]]]
+DEBUG:Init Children:	Child C:[['2.3', '2.7'], [13.0, 17.0]]
+DEBUG:Init Children:		link xml: 
+DEBUG:Init Children:			D["D:[['1.8.2', '2.9.4.2'], [26.0, 30.0]]"]
+DEBUG:Init Children:		link sql: 
+DEBUG:Init Children:	Child C:[['2.6', '2.9.4'], [24.0, 30.0]]
+DEBUG:Init Children:		link xml: 
+DEBUG:Init Children:			D["D:[['1.8.2', '2.9.4.2'], [26.0, 30.0]]"]
+DEBUG:Init Children:		link sql: 
+DEBUG:Traversing Query:	Traverse down B
+DEBUG:Main Filterer:	--- Begin Filtering --- B:[['1.4', '2.9.2'], [12.0, 31.0]]
+DEBUG:Main Filterer:		Parent: B:[['1.4', '5.6'], [12.0, 82.0]]
+DEBUG:Main Filterer:		Limit range: {'A': [10.0, 40.0], 'C': [24.0, 30.0], 'D': [26.0, 26.0], 'B': [31.0, 69.0]}
+DEBUG:Main Filterer:		Limit range UPDATED based on node value{'A': [10.0, 40.0], 'C': [24.0, 30.0], 'D': [26.0, 26.0], 'B': [31.0, 31.0]}
+DEBUG:Value Filterer:	Begin Value Filtering B:[['1.4', '2.9.2'], [12.0, 31.0]]
+DEBUG:Value Filterer:	Init intersected_value_boundary[{'C': [13.0, 72.0], 'B': [5.0, 31.0]}]
+DEBUG:Value Filterer:	Find intersected value boundary
+DEBUG:Value Filterer:	Checking B_C Nodes: [[[5.0, 31.0], [13.0, 72.0]]]
+DEBUG:Value Filterer:	remaining_nodes: [[[5.0, 31.0], [13.0, 72.0]]]
+DEBUG:Value Filterer:	Updated intersected value boundary: [{'C': [13.0, 72.0], 'B': [5.0, 31.0]}]
+DEBUG:Value Filterer:	Value Filter result
+DEBUG:Value Filterer:	link sql: 
+DEBUG:Value Filterer:		B_C[[[5.0, 31.0], [13.0, 72.0]]]
+DEBUG:Value Filterer:	link sql intersection range: 
+DEBUG:Value Filterer:		B[[5.0, 31.0]]
+DEBUG:Value Filterer:		C[[13.0, 72.0]]
+DEBUG:Main Filterer:	Limit range UPDATED based on value filtering{'A': [10.0, 40.0], 'C': [24.0, 30.0], 'D': [26.0, 26.0], 'B': [31.0, 31.0]}
+DEBUG:Main Filterer:	Begin Connected Element FilteringB:[['1.4', '2.9.2'], [12.0, 31.0]]
+DEBUG:Connected Element:	Connected element filtering
+DEBUG:Connected Element:	Limit range {'A': [10.0, 40.0], 'C': [24.0, 30.0], 'D': [26.0, 26.0], 'B': [31.0, 31.0]}
+DEBUG:Traversing Query:	Start check lower lever B:[['1.4', '2.9.2'], [12.0, 31.0]]
+DEBUG:Init Children:	Start initialize children link B:[['1.4', '2.9.2'], [12.0, 31.0]]
+DEBUG:Init Children:	limit_range {'A': [10.0, 40.0], 'C': [24.0, 30.0], 'D': [26.0, 26.0], 'B': [31.0, 31.0]}
+DEBUG:Init Children:		B_C:[[5.0, 31.0], [13.0, 72.0]] - Children: [[[5.0, 9.0], [13.0, 36.0]], [[22.0, 31.0], [24.0, 72.0]]]
+DEBUG:Init Children:		link_sql[B_C] [[[22.0, 31.0], [24.0, 72.0]]]
+DEBUG:Init Children:	Child B:[['1.6', '2.5.3'], [12.0, 18.0]]
+DEBUG:Init Children:		link xml: 
+DEBUG:Init Children:		link sql: 
+DEBUG:Init Children:			B_C[]
+DEBUG:Init Children:Start initialize children link A:[['1.1', '2.9'], [0.0, 64.0]]
+DEBUG:Init Children:limit_range {'A': [10.0, 40.0], 'B': [31.0, 31.0], 'D': [26.0, 26.0], 'C': [24.0, 30.0]}
+DEBUG:Init Children:	C:[['2.3', '2.9.4'], [13.0, 30.0]] - Children: [[['2.3', '2.7'], [13.0, 17.0]], [['2.6', '2.9.4'], [24.0, 30.0]]]
+DEBUG:Init Children:VAMPIRE
+DEBUG:Init Children:	link_xml[C] [[['2.6', '2.9.4'], [24.0, 30.0]]]
+DEBUG:Init Children:	B:[['1.4', '2.9.2'], [12.0, 31.0]] - Children: [[['1.6', '2.5.3'], [12.0, 18.0]]]
+DEBUG:Init Children:VAMPIRE
+INFO:Main:query root node A:[['1.1', '2.9'], [0.0, 64.0]] filter time: 0 filtered: True Init Children: No child node of Bsatisfy
+INFO:Main:Filtering time 0
+INFO:Main:Average filtering time for one node: 0
+INFO:Main:Number of remaining leaf nodes of root after Filtering: 0
+INFO:Main:[]
+INFO:Main:Number of remaining leaf nodes of root after validation: 0
+INFO:Main:All Possible results:
+INFO:Main:validation time 0
+INFO:Runner:#####################
+INFO:Runner:#####################
+INFO:Runner:#####################

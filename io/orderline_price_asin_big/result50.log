@@ -1,0 +1,11 @@
+INFO:Loader:Loader started
+INFO:Loader:Total loading time: 32
+INFO:Joiner:Started Joiner
+INFO:Joiner Init:Initialize link took:  0
+INFO:Joiner Filtering:Filtering time 891
+INFO:Joiner Filtering:Number of node processed:  2079
+INFO:Joiner Filtering:Number of node filtered:  299
+INFO:Joiner Filtering:Average filtering time for one node: 0
+INFO:Main:#####################
+INFO:Main:#####################
+INFO:Main:#####################
