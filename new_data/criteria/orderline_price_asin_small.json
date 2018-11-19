@@ -1,0 +1,99 @@
+{
+    "elements": ["orderline", "price", "asin"],
+    "elements_stats": {
+        "orderline": {
+            "count": 10019,
+            "mean": 27684,
+            "std": 13018,
+            "low": 26000,
+            "high": 34000
+        },
+        "price": {
+            "count": 10425,
+            "mean": 103811,
+            "std": 23124,
+            "low": 98000,
+            "high": 103000
+        },
+        "asin": {
+            "count": 10385,
+            "mean": 54514,
+            "std": 15894,
+            "low": 50000,
+            "high": 60000
+        }
+    },
+    "tables": ["orderline_price_asin", "orderline_asin", "orderline_price", "price_asin"],
+    "tables_stats": {
+        "orderline_price_asin": {
+            "count": 10000,
+            "elements": ["orderline", "price", "asin"],
+            "orderline": {
+                "mean": 30000,
+                "std": 3000,
+                "low": 17000,
+                "high": 27000
+            },
+            "price": {
+                "mean": 110000,
+                "std": 4000,
+                "low": 99900,
+                "high": 130000
+            },
+            "asin": {
+                "mean": 60000,
+                "std": 5000,
+                "low": 41000,
+                "high": 51000
+            }
+        },
+        "orderline_asin": {
+            "count": 10000,
+            "elements": ["orderline","asin"],
+            "orderline": {
+                "mean": 26000,
+                "std": 1000,
+                "low": 19000,
+                "high": 26300
+            },
+            "asin": {
+                "mean": 55000,
+                "std": 2000,
+                "low": 40000,
+                "high": 50300
+            }
+        },
+        "orderline_price": {
+            "count": 10000,
+            "elements": ["orderline", "price"],
+            "orderline": {
+                "mean": 25500,
+                "std": 1500,
+                "low": 26200,
+                "high": 34500
+            },
+            "price": {
+                "mean": 109000,
+                "std": 3000,
+                "low": 101000,
+                "high": 130000
+            }
+        },
+        "price_asin": {
+            "count": 10000,
+            "elements": ["price", "asin"],
+            "price": {
+                "mean": 100000,
+                "std": 1500,
+                "low": 102000,
+                "high": 110000
+            },
+            "asin": {
+                "mean": 56000,
+                "std": 2000,
+                "low": 42100,
+                "high": 50500
+            }
+        }
+    }
+}
